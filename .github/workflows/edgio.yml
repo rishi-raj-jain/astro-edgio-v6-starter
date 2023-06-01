@@ -16,3 +16,5 @@ jobs:
       - run: npm install
       - run: npm install -g @edgio/cli
       - run: edg deploy --token=$EDGIO_DEPLOY_TOKEN
+        env:
+          EDGIO_DEPLOY_TOKEN: ${{secrets.EDGIO_DEPLOY_TOKEN}}
